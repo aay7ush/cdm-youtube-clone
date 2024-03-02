@@ -26,28 +26,7 @@ const categories = [
   { name: 'Gym', icon: <Dumbbell /> },
 ]
 
-const Sidebar = ({ selectedCategory, setSelectedCategory }) => {
-  return (
-    <div className="flex md:flex-col md:gap-1 px-5 py-2 overflow-scroll md:overflow-visible scrollbar-hide sticky top-14 h-min bg-white">
-      {categories.map((category) => (
-        <button
-          onClick={() => setSelectedCategory(category.name)}
-          key={category.name}
-          className={`flex gap-2 font-medium px-3 py-2 rounded-full transition duration-300 hover:bg-red-600 hover:text-white group ${
-            category.name === selectedCategory && 'bg-red-600 text-white'
-          }`}
-        >
-          <span
-            className={`group-hover:text-white ${
-              category.name === selectedCategory ? 'text-white' : 'text-red-600'
-            }`}
-          >
-            {category.icon}
-          </span>
-          <span>{category.name}</span>
-        </button>
-      ))}
-    </div>
-  )
+const Sidebar = () => {
+  return <h1>Sidebar</h1>
 }
 export default Sidebar
