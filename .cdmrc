@@ -1,0 +1,3 @@
+tabs: ["src/App.jsx","src/pages/Feed.jsx","src/pages/Layout.jsx","src/pages/VideoDetail.jsx"]
+terminals: ["bun install && bun run dev"]
+run-button: bun run dev
