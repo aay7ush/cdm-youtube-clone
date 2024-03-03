@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+header {
+  @apply sticky top-0 px-5 py-2 bg-white flex justify-between items-center;
+}
