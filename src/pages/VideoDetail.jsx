@@ -36,7 +36,7 @@ const VideoDetail = () => {
           width="100%"
           controls
         />
-        <p className="text-2xl">{title}</p>
+        <h4 className="text-2xl">{title}</h4>
         <div className="flex justify-between text-lg">
           <p className="text-gray-600">{channelTitle}</p>
           <div className="flex gap-5">

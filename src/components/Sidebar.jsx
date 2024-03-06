@@ -28,7 +28,7 @@ const categories = [
 
 const Sidebar = ({ selectedCategory, setSelectedCategory }) => {
   return (
-    <div className="flex md:flex-col md:gap-1 px-5 py-2 overflow-scroll md:overflow-visible scrollbar-hide sticky top-14 h-min bg-white">
+    <aside className="flex md:flex-col md:gap-1 px-5 py-2 overflow-scroll md:overflow-visible scrollbar-hide sticky top-14 h-min bg-white">
       {categories.map((category) => (
         <button
           onClick={() => setSelectedCategory(category.name)}
@@ -47,7 +47,7 @@ const Sidebar = ({ selectedCategory, setSelectedCategory }) => {
           <span>{category.name}</span>
         </button>
       ))}
-    </div>
+    </aside>
   )
 }
 export default Sidebar
